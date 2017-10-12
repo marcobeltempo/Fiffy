@@ -1,0 +1,7 @@
+[package]
+name = "lust"
+version = "0.1.0"
+authors = ["Sean Prashad <S.Prashad@outlook.com>", "Jiel Selmani <JielsEmail@email.com>"]
+
+[dependencies]
+sha1 = "0.2.0"

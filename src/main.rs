@@ -2,6 +2,7 @@ extern crate sha1;  // For use of SHA1 functions
 extern crate md5;   // For use of MD5 functions
 
 use std::env;
+use std::fs;
 use std::fs::File;
 use std::path::Path;
 use std::io::prelude::*;
@@ -16,6 +17,7 @@ fn main(){
 
     // File I/O: https://doc.rust-lang.org/book/second-edition/ch12-02-reading-a-file.html
     get_file_name(&args[1]);
+    get_file_size(&args[1]);
     generate_sha(&args[1]);
     generate_md5(&args[1]);
 }
@@ -23,6 +25,13 @@ fn main(){
 fn get_file_name(file_path: &String) -> () {
     let path = Path::new(file_path);
     println!("File name: {:?}", path.file_name().unwrap());
+}
+
+fn get_file_size(file_path: &String) -> () {
+    let path = Path::new(file_path);
+    let metadata = fs::metadata(&path);
+    
+    println!("File size: {:?}", metadata);
 }
 
 fn generate_sha(file_path: &String) -> () {
@@ -47,18 +56,3 @@ fn generate_md5(file_path: &String) -> () {
 
     println!("MD5 hash: \"{:x}\"", md5);
 }
-
-/*
-    getFileSize(Path file_path) -> OsString
- */
-//fn get_file_size(file_path: &Path) -> fs::Metadata {
-    // let metadata = fs::metadata(file_path);
-    //return OsString::from(metadata);
-    //return fs::metadata(filePath).unwrap();
-
-    // let metadata = fs::metadata("foo.txt");
-    // //assert!(!metadata.is_dir());
-    // return metadata.file_type.unwrap();
-
-    //assert_eq!(0, metadata.len());
-//}

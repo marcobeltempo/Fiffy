@@ -1,46 +1,40 @@
 extern crate sha1;
 
-use std::path::Path;    // For use in getFileName()
-use std::ffi::OsString; // For use in getFileName()
-
-fn main(){
-    let path = Path::new("foo.txt");
-
-    // Optional values - refer to: https://doc.rust-lang.org/std/option/ 
-    println!("1. {:?}", get_file_name(path)); // unwrap() supresses the "Some" keyword
-    //println!("2. {:?}", get_file_size(path));
-
-
-
-    let m = sha1::Sha1::new();
-
-    let s = String::from(m.digest().to_string());
-
-    println!("{:?}", s);
-
-    //let mut m = sha1::Sha1::new();
-    //m.update(b"Hello World!");
-    // println!("3. {:?}", generateSHA(path));
-
-    //assert_eq!(m.digest().to_string(), "2ef7bde608ce5404e97d5f042f95f89f1c232871");
-}
-
-// fn generateSHA(file_path: &Path) -> ! {
-//     let mut m = sha1::Sha1::new();
-
-//     let s = String::from(m);
-
-//     //m.update(OsString::from(file_path.file_name()));
-// }
-
-// Unlike C/C++, there's NO restrictions on the order of function definitions!
+use std::env;
+use std::fs::File;
+use std::io::prelude::*;
+use std::path::Path;
 
 /*
-    getFileName(Path file_path) -> OsString
-    OsString: https://doc.rust-lang.org/std/ffi/struct.OsString.html
- */
-fn get_file_name(file_path: &Path) -> OsString {
-    return OsString::from(file_path.file_name().unwrap());
+    To run program: cargo run [File_Name_Goes_Here_As_Command_Line_Argument]
+        ex: cargo run lazydog.txt
+*/
+
+fn main(){
+    let args: Vec<String> = env::args().collect();
+
+    /*
+        File I/O: https://doc.rust-lang.org/book/second-edition/ch12-02-reading-a-file.html
+    */
+    get_file_name(&args[1]);
+    generate_sha(&args[1]);
+}
+
+fn get_file_name(file_path: &String) -> () {
+    let path = Path::new(file_path);
+    println!("1. {:?}", path.file_name().unwrap());
+}
+
+fn generate_sha(file_path: &String) -> () {
+    let mut file = File::open(file_path).expect("File Not Found!");
+
+    let mut file_contents = String::new();
+    file.read_to_string(&mut file_contents).expect("Something went wrong reading the file!");
+
+    let mut m = sha1::Sha1::new();
+    m.update(file_contents.as_bytes());
+
+    println!("2. After SHA1 hash: {:?}", m.digest().to_string());
 }
 
 /*

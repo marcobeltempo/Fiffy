@@ -9,10 +9,11 @@ A simple Rust library intended to retrieve information about your local file sys
 To begin using _Lust_, please follow the steps outlined below:
 
 1. Clone _Lust_ to your local workstation using Terminal or Git Bash: `git clone https://github.com/SeanPrashad/Lust.git`
-2. Navigate into the root level of the folder; ex: `~/Projects/Lust`
+2. Navigate into the root level of the folder; ex: `cd ~/repos/Lust`
 3. Build the `Cargo` project using: `cargo build`
-4. Run the project whilst supplying a **command-line argument** of the **absolute path** of a file you'd like to diagnose; ex: `cargo run lazydog.txt` where lazydog.txt is in the root level folder of our `Cargo` project
+4. Run the project whilst supplying a ** single command-line argument** of the **absolute path** for a file you'd like to diagnose; ex: `cargo run lazydog.txt` (where `lazydog.txt` is in the root level folder of our `Cargo` project)
 5. Marvel in awe at the results!
+6. **Bonus**: Repeat for another file
 
 ## Functionality:
 

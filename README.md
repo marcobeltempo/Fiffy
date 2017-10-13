@@ -1,8 +1,12 @@
 # Lust
 
-## Description: A simple Rust library intended to retrieve information about your local file system!
+## Description:
 
-## Usage: To begin using _Lust_, please follow the steps outlined below:
+A simple Rust library intended to retrieve information about your local file system!
+
+## Usage:
+
+To begin using _Lust_, please follow the steps outlined below:
 
 1. Clone _Lust_ to your local workstation using Terminal or Git Bash: `git clone https://github.com/SeanPrashad/Lust.git`
 2. Navigate into the root level of the folder; ex: `~/Projects/Lust`

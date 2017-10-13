@@ -10,6 +10,8 @@
 4. Run the project whilst supplying a **command-line argument** of the **absolute path** of a file you'd like to diagnose; ex: `cargo run lazydog.txt` where lazydog.txt is in the root level folder of our `Cargo` project
 5. Marvel in awe at the results!
 
+**Functionality**:
+
 Function Name | Purpose | Usage | Output
 -- | - | - | - 
 `get_file_name(file_path: &String)`  | Displays a file name given the absolute path | `get_file_name("/home/dhpmuh/909SPD/FinalExam.exe")` | `"FinalExam.exe"`

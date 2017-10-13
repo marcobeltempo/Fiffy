@@ -27,11 +27,16 @@ fn get_file_name(file_path: &String) -> () {
     println!("File name: {:?}", path.file_name().unwrap());
 }
 
+/*
+    [21:42:20]  <wyvern>    Depending on the sort of code you’re writing, you could display a nice error message, or get user input for a better file path to look at, or just crash if you’re writing a test or a throwaway experiment
+*/
+
 fn get_file_size(file_path: &String) -> () {
-    let path = Path::new(file_path);
-    let metadata = fs::metadata(&path);
-    
-    println!("File size: {:?}", metadata);
+    match fs::metadata(file_path)
+    { 
+        Ok(metadata) => { println!("File size: {:?} bytes", metadata.len()); },
+        Err(e) => { println!("Error fetching file metadata! {:?}", e); } 
+    }
 }
 
 fn generate_sha(file_path: &String) -> () {

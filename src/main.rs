@@ -1,8 +1,8 @@
 extern crate sha1; // For use of SHA1 functions
 extern crate md5; // For use of MD5 functions
 
-use std::env;
 use std::fs;
+use std::env;
 use std::fs::File;
 use std::path::Path;
 use std::io::prelude:: * ;

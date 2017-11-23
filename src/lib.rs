@@ -1,3 +1,5 @@
+// Run program locally with `cargo build --features "clippy";`
+
 #![cfg_attr(feature="clippy", feature(plugin))]
 #![cfg_attr(feature="clippy", plugin(clippy))]
 
@@ -51,7 +53,7 @@ pub fn generate_md5(file_path: &str) -> md5::Digest {
     md5::compute(file_contents)
 }
 
-// cargo test
+// To run tests, execute `cargo test` whilst inside the repo file structure
 #[cfg(test)]
 pub mod tests {
     #[test]

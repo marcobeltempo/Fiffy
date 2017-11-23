@@ -10,7 +10,7 @@ A simple Rust library intended to retrieve information about your beloved file s
 
 Function Name | Purpose | Usage | Output
 -- | - | - | -
-`get_file_name(file_path: &String)`  | Displays a file name given the absolute path | `get_file_name("/home/FinalExam.txt")` | `"FinalExam.txt"`
-`get_file_size(file_path: &String)`  | Displays the size of a file in bytes given the absolute path | `get_file_size("/home/FinalExam.txt")` | `1337 bytes`
-`generate_sha(file_path: &String)` | Performs a SHA1 hash on the given file and displays the digest | `generate_sha("/home/FinalExam.txt")` |  `"2fd4e1c..."`
-`generate_md5(file_path: &String)` | Performs a MD5 hash on the given file and displays the digest | `generate_md5("/home/FinalExam.txt")` | `"9e107d9..."`
+`pub fn get_file_name(file_path: &str)`  | Displays a file name given the absolute path | `get_file_name("/home/FinalExam.txt")` | `"FinalExam.txt"`
+`pub fn get_file_size(file_path: &str)`  | Displays the size of a file in bytes given the absolute path | `get_file_size("/home/FinalExam.txt")` | `1337 bytes`
+`pub fn generate_sha(file_path: &str)` | Performs a SHA1 hash on the given file and displays the digest | `generate_sha("/home/FinalExam.txt")` |  `"2fd4e1c..."`
+`pub fn generate_md5(file_path: &str)` | Performs a MD5 hash on the given file and displays the digest | `generate_md5("/home/FinalExam.txt")` | `"9e107d9..."`

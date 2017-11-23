@@ -57,7 +57,19 @@ pub fn generate_md5(file_path: &str) -> md5::Digest {
 #[cfg(test)]
 pub mod tests {
     #[test]
-    fn my_unit_test_number_one() {
-      // Logic to perform unit testing goes here!
+    fn calc_sha1() {
+        use sha1;
+
+        let mut m = sha1::Sha1::new();
+
+        m.reset();
+        m.update("The quick brown ".as_bytes());
+        m.update("fox jumps over ".as_bytes());
+        m.update("the lazy dog".as_bytes());
+        let hh = m.digest().to_string();
+
+        let h = "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12";
+        assert_eq!(hh.len(), h.len());
+        assert_eq!(hh, &*h);
     }
 }

@@ -31,7 +31,7 @@ fn generate_sha(file_path: &str) -> sha1::Sha1 {
     let mut file_contents = String::new();
 
     file.read_to_string(&mut file_contents).expect(
-        "Something went wrong reading the file!",
+        "Something went wrong reading the file!"
     );
 
     let mut sha_hash = sha1::Sha1::new();
@@ -45,7 +45,7 @@ fn generate_md5(file_path: &str) -> md5::Digest {
     let mut file_contents = String::new();
 
     file.read_to_string(&mut file_contents).expect(
-        "Something went wrong reading the file!",
+        "Something went wrong reading the file!"
     );
 
     md5::compute(file_contents)

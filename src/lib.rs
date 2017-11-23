@@ -10,12 +10,12 @@ use std::io::Read;
 use std::path::Path;
 use std::ffi::OsString;
 
-fn get_file_name(file_path: &str) -> OsString {
+pub fn get_file_name(file_path: &str) -> OsString {
     let path = Path::new(file_path.trim());
     path.file_name().unwrap().to_os_string()
 }
 
-fn get_file_size(file_path: &str) -> u64 {
+pub fn get_file_size(file_path: &str) -> u64 {
     match fs::metadata(file_path.trim()) {
         Ok(metadata) => {
             metadata.len()
@@ -26,7 +26,7 @@ fn get_file_size(file_path: &str) -> u64 {
     }
 }
 
-fn generate_sha(file_path: &str) -> sha1::Sha1 {
+pub fn generate_sha(file_path: &str) -> sha1::Sha1 {
     let mut file = File::open(file_path.trim()).expect("File Not Found!");
     let mut file_contents = String::new();
 
@@ -40,7 +40,7 @@ fn generate_sha(file_path: &str) -> sha1::Sha1 {
     sha_hash
 }
 
-fn generate_md5(file_path: &str) -> md5::Digest {
+pub fn generate_md5(file_path: &str) -> md5::Digest {
     let mut file = File::open(file_path.trim()).expect("File Not Found!");
     let mut file_contents = String::new();
 
@@ -49,4 +49,13 @@ fn generate_md5(file_path: &str) -> md5::Digest {
     );
 
     md5::compute(file_contents)
+}
+
+// cargo test
+#[cfg(test)]
+pub mod tests {
+    #[test]
+    fn my_unit_test_number_one() {
+      // Logic to perform unit testing goes here!
+    }
 }

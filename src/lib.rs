@@ -64,12 +64,12 @@ pub fn generate_md5(file_path: &str) -> &str {
 pub mod tests {
     #[test]
     fn get_file_name() {
-        use std::ffi::OsStr;
+        use std::ffi::OsString;
         use ::get_file_name;
 
-        let file_name = OsStr::new("lazydog.txt");
+        let file_name = OsString::from("lazydog.txt");
 
-        assert_eq!(get_file_name("./lazydog.txt"), file_name.to_os_string());
+        assert_eq!(get_file_name("./lazydog.txt"), file_name);
     }
 
     #[test]

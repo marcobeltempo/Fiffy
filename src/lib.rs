@@ -15,6 +15,10 @@ fn get_file_name(file_path: &str) -> OsString {
     path.file_name().unwrap().to_os_string()
 }
 
+<<<<<<< HEAD
+=======
+// IO functions may fail which returns a Result<T, err> that we must handle
+>>>>>>> b4654b49675b9b5cd935feeec0dbcc864e80aeb4
 fn get_file_size(file_path: &str) -> u64 {
     match fs::metadata(file_path.trim()) {
         Ok(metadata) => {

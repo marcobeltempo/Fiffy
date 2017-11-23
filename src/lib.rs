@@ -28,7 +28,7 @@ pub fn get_file_size(file_path: &str) -> u64 {
     }
 }
 
-pub fn generate_sha(file_path: &str) -> sha1::Sha1 {
+pub fn generate_sha1(file_path: &str) -> sha1::Sha1 {
     let mut file = File::open(file_path.trim()).expect("File Not Found!");
     let mut file_contents = String::new();
 
@@ -57,6 +57,16 @@ pub fn generate_md5(file_path: &str) -> md5::Digest {
 #[cfg(test)]
 pub mod tests {
     #[test]
+    fn get_file_name() {
+
+    }
+
+    #[test]
+    fn get_file_size() {
+        
+    }
+
+    #[test]
     fn calc_sha1() {
         use sha1;
 
@@ -71,5 +81,9 @@ pub mod tests {
         let h = "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12";
         assert_eq!(hh.len(), h.len());
         assert_eq!(hh, &*h);
+    }
+
+    #[test]
+    fn calc_md5() {
     }
 }

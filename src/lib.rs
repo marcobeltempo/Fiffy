@@ -69,12 +69,16 @@ pub mod tests {
 
         let file_name = OsStr::new("lazydog.txt");
 
-        assert_eq!(get_file_name("/Users/Sean/Home/Desktop/lazydog.txt"), file_name.to_os_string());
+        assert_eq!(get_file_name("./lazydog.txt"), file_name.to_os_string());
     }
 
     #[test]
     fn get_file_size() {
-        
+        use ::get_file_size;
+
+        let file_size : u64 = 43;
+
+        assert_eq!(get_file_size("./lazydog.txt"), file_size);
     }
 
     #[test]

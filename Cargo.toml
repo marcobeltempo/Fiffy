@@ -8,8 +8,7 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
-sha1 = "0.2.0"
-md5 = "0.3.6"
+rust-crypto = "^0.2"
 clippy = {version = "*", optional = true}
 
 [features]

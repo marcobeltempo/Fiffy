@@ -15,7 +15,7 @@ use crypto::digest::Digest;
 use crypto::sha1::Sha1;
 use crypto::md5::Md5;
 
-/// Returns the file name, given an a string representing an absolute or relative file path
+/// Returns the file name, given an a string representing the (absolute or relative) file path
 pub fn get_file_name(file_path: &str) -> OsString {
     let path = Path::new(file_path.trim());
     path.file_name().unwrap().to_os_string()

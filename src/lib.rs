@@ -15,13 +15,13 @@ use crypto::digest::Digest;
 use crypto::sha1::Sha1;
 use crypto::md5::Md5;
 
-/// Returns the file name, given an a string representing the (absolute or relative) file path
+/// Returns the file name of a given string representing the (absolute or relative) file path
 pub fn get_file_name(file_path: &str) -> OsString {
     let path = Path::new(file_path.trim());
     path.file_name().unwrap().to_os_string()
 }
 
-/// Returns the file size in bytes, given a string representing the (absolute or relative) file path
+/// Returns the file size in bytes of a given a string representing the (absolute or relative) file path
 pub fn get_file_size(file_path: &str) -> u64 {
     // Returns a Result<> which MUST be handled for exceptions
     match fs::metadata(file_path.trim()) {
@@ -30,7 +30,7 @@ pub fn get_file_size(file_path: &str) -> u64 {
     }
 }
 
-/// Returns the SHA1 hash, given a string representing the (absolute or relative) file path
+/// Returns the SHA1 hash of a given a string representing the (absolute or relative) file path
 pub fn generate_sha1(file_path: &str) -> String {
     let mut file = File::open(file_path.trim()).expect("File Not Found!");
     let mut file_contents = String::new();
@@ -46,7 +46,7 @@ pub fn generate_sha1(file_path: &str) -> String {
     sha_hash.result_str()
 }
 
-/// Returns the MD5 hash, given a string representing the (absolute or relative) file path
+/// Returns the MD5 hash of a given a string representing the (absolute or relative) file path
 pub fn generate_md5(file_path: &str) -> String {
     let mut file = File::open(file_path.trim()).expect("File Not Found!");
     let mut file_contents = String::new();

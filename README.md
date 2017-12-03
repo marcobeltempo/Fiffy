@@ -48,7 +48,7 @@ OSX/Unix installation (via [Terminal](https://en.wikipedia.org/wiki/Terminal_(ma
 curl -sSf https://static.rust-lang.org/rustup.sh | sh
 ```
 
-Instructions for Microsoft Windows may be found ** [here](https://github.com/rust-lang/cargo#compiling-from-source)**.
+Instructions for Microsoft Windows may be found **[here](https://github.com/rust-lang/cargo#compiling-from-source)**.
 
 Further installation instructions can be found **[here](http://doc.crates.io/#installing)**.
 
@@ -59,7 +59,7 @@ After installing the prerequisites listed above, you're ready to build!
 1. First, clone the repository to your local machine via git:
 
   ```
-  https://github.com/SeanPrashad/Lust.git
+  git clone https://github.com/SeanPrashad/Lust.git
   ```
 
   Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**.
@@ -76,7 +76,7 @@ After installing the prerequisites listed above, you're ready to build!
   cargo build
   ```
 
-*Note*: Supply the `--verbose` argument to get a more detailed output (`cargo build --verbose`)
+*Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo build --verbose`)
 
 ## Running the Test Suite
 
@@ -86,7 +86,7 @@ The test suite can be found within `src/lib.rs` in the module `tests`. To build 
 cargo test
 ```
 
-*Note*: Supply the `--verbose` argument to get a more detailed output (`cargo test --verbose`)
+*Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo test --verbose`)
 
 ## Linting
 
@@ -98,7 +98,7 @@ To invoke Clippy on-demand, simply run:
 cargo clippy
 ```
 
-*Note*: Supply the `--verbose` argument to get a more detailed output (`cargo clippy --verbose`). More information can be found **[here](https://github.com/rust-lang-nursery/rust-clippy#usage)**.
+*Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo clippy --verbose`). More information can be found **[here](https://github.com/rust-lang-nursery/rust-clippy#usage)**.
 
 
 ## Technologies & Tools

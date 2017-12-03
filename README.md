@@ -8,32 +8,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Usage
 
-1. `get_file_name(file_path: &str)` - returns the file name (as an `OsString`), given an absolute or relative path
+1. `get_file_name(file_path: &str)` - returns the file name (as an [OsString](https://doc.rust-lang.org/std/ffi/struct.OsString.html)), given an absolute or relative path
 
   ```Rust
-  let file_name = get_file_name("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
-  println!("{:?}", file_name);  //prints "README.md"
+  let file_path = "/home/kim/mydata.txt";
+  let file_name = get_file_name(file_path);
+  println!("{:?}", file_name);  //prints "mydata.txt"
   ```
 
-2. `get_file_size(file_path: &str)` - returns the file size (as a `u64`), given an absolute or relative path
+2. `get_file_size(file_path: &str)` - returns the file size (as a [u64](http://manishearth.github.io/rust-internals-docs/std/primitive.u64.html)), given an absolute or relative path
 
   ```Rust
-  let file_size = get_file_size("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
-  println!("{:?}", file_size);  //prints "82"
+  let file_path = "/home/kim/mydata.txt";
+  let file_size = get_file_size(file_path);
+  println!("{:?}", file_size);  //prints "129" - (e.g., the file is 129 bytes on disk)
   ```
 
-3. `generate_sha1(file_path: &str)` - returns the sha1 hash (as a `String`), given an absolute or relative path
+3. `generate_sha1(file_path: &str)` - returns the sha1 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
 
   ```Rust
-  let sha1_hash = generate_sha1("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
-  println!("{:?}", sha1_hash);  //prints "e2ae20d9ae7fcacb605c03c198e0a1c51d446f50"
+  let text = "The quick brown fox jumps over the lazy dog"
+  let sha1_digest = generate_sha1(text);
+  println!("{:?}", sha1_digest);  //prints "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12"
   ```
 
-4. `generate_md5(file_path: &str)` - returns the md5 hash (as a `String`), given an absolute or relative path
+4. `generate_md5(file_path: &str)` - returns the md5 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
 
   ```Rust
-  let md5_hash = generate_md5("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
-  println!("{:?}", md5_hash);  //prints "b958ee170050ed7a2f93509f13bf16c3"
+  let text = "The quick brown fox jumps over the lazy dog"
+  let md5_digest = generate_md5(text);
+  println!("{:?}", md5_digest);  //prints "9e107d9d372bb6826bd81d3542a419d6"
   ```
 
 ### Installing Prerequisites

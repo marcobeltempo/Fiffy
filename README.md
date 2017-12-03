@@ -62,7 +62,7 @@ After installing the prerequisites listed above, you're ready to build!
   git clone https://github.com/SeanPrashad/Lust.git
   ```
 
-  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**.
+  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**. *Note*: Remember to extract the `.zip` file to a location where you conduct your work!
 
 2. Next, `cd` into the downloaded repository using your Terminal (or Git Bash if on Windows):
 
@@ -118,7 +118,7 @@ Any and all contributions are welcome, regardless of your programming expertise.
 * **David Humphrey** - *Documentation improvements/development suggestions* - [@humphd](https://github.com/humphd)
 * **Marco Beltempo** - *Source code refinement* - [@marcobeltempo](https://github.com/marcobeltempo)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/SeanPrashad/Lust/graphs/contributors) who participated in this project.
 
 ## License
 

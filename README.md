@@ -118,7 +118,7 @@ Any and all contributions are welcome, regardless of your programming expertise.
 * **David Humphrey** - *Documentation improvements/development suggestions* - [@humphd](https://github.com/humphd)
 * **Marco Beltempo** - *Source code refinement* - [@marcobeltempo](https://github.com/marcobeltempo)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/SeanPrashad/Lust/graphs/contributors) who participated in this project.
 
 ## License
 

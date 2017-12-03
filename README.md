@@ -42,7 +42,7 @@ Below you'll find what's required to build and compile Lust:
 
 #### Rust and Cargo
 
-OSX/Unix installation (via [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)):
+OSX/Unix installation (via [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS))):
 
 ```
 curl -sSf https://static.rust-lang.org/rustup.sh | sh

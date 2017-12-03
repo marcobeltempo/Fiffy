@@ -50,7 +50,7 @@ curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
 Instructions for Microsoft Windows may be found **[here](https://github.com/rust-lang/cargo#compiling-from-source)**.
 
-Further installation instructions can be found **[here](http://doc.crates.io/#installing)**.
+Additional installation instructions can be found **[here](http://doc.crates.io/#installing)**.
 
 ### Building Fiffy
 
@@ -117,8 +117,8 @@ Any and all contributions are welcome, regardless of your programming expertise.
 ## Authors
 
 * **Sean Prashad** - *Initial and on-going maintenance* - [@SeanPrashad](https://github.com/SeanPrashad)
-* **David Humphrey** - *Documentation improvements/development suggestions* - [@humphd](https://github.com/humphd)
-* **Marco Beltempo** - *Source code refinement* - [@marcobeltempo](https://github.com/marcobeltempo)
+* **David Humphrey** - *Initial documentation and development improvements/suggestions* - [@humphd](https://github.com/humphd)
+* **Marco Beltempo** - *Source code contributor* - [@marcobeltempo](https://github.com/marcobeltempo)
 
 See also the list of [contributors](https://github.com/SeanPrashad/Fiffy/graphs/contributors) who participated in this project.
 

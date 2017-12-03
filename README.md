@@ -1,4 +1,4 @@
-# Fiffy [![Build Status](https://travis-ci.org/SeanPrashad/Fiffy.svg?branch=master)](https://travis-ci.org/SeanPrashad/Fiffy) [![Build Status]( https://img.shields.io/crates/v/lust.svg)](https://crates.io/crates/lust)
+# Fiffy [![Build Status](https://travis-ci.org/SeanPrashad/Fiffy.svg?branch=master)](https://travis-ci.org/SeanPrashad/Fiffy) [![Build Status]( https://img.shields.io/crates/v/fiffy.svg)](https://crates.io/crates/fiffy)
 
 A Rust library designed to provide simple data for a given file path!
 

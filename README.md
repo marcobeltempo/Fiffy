@@ -62,7 +62,9 @@ After installing the prerequisites listed above, you're ready to build!
   git clone https://github.com/SeanPrashad/Lust.git
   ```
 
-  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**. *Note*: Remember to extract the `.zip` file to a location where you conduct your work!
+  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**.
+
+  *Note*: Remember to extract the `.zip` file to a location where you conduct your work!
 
 2. Next, `cd` into the downloaded repository using your Terminal (or Git Bash if on Windows):
 

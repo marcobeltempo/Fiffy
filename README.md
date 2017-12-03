@@ -1,4 +1,4 @@
-# Lust [![Build Status](https://travis-ci.org/SeanPrashad/Lust.svg?branch=master)](https://travis-ci.org/SeanPrashad/Lust) [![Build Status]( https://img.shields.io/crates/v/lust.svg)](https://crates.io/crates/lust)
+# Fiffy [![Build Status](https://travis-ci.org/SeanPrashad/Fiffy.svg?branch=master)](https://travis-ci.org/SeanPrashad/Fiffy) [![Build Status]( https://img.shields.io/crates/v/lust.svg)](https://crates.io/crates/lust)
 
 A Rust library designed to provide simple data for a given file path!
 
@@ -11,34 +11,34 @@ These instructions will get you a copy of the project up and running on your loc
 1. `get_file_name(file_path: &str)` - returns the file name (as an `OsString`), given an absolute or relative path
 
   ```Rust
-  let file_name = get_file_name("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
+  let file_name = get_file_name("C:/Users/JohnDoe/Desktop/repos/Fiffy/README.md");
   println!("{:?}", file_name);  //prints "README.md"
   ```
 
 2. `get_file_size(file_path: &str)` - returns the file size (as a `u64`), given an absolute or relative path
 
   ```Rust
-  let file_size = get_file_size("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
+  let file_size = get_file_size("C:/Users/JohnDoe/Desktop/repos/Fiffy/README.md");
   println!("{:?}", file_size);  //prints "82"
   ```
 
 3. `generate_sha1(file_path: &str)` - returns the sha1 hash (as a `String`), given an absolute or relative path
 
   ```Rust
-  let sha1_hash = generate_sha1("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
+  let sha1_hash = generate_sha1("C:/Users/JohnDoe/Desktop/repos/Fiffy/README.md");
   println!("{:?}", sha1_hash);  //prints "e2ae20d9ae7fcacb605c03c198e0a1c51d446f50"
   ```
 
 4. `generate_md5(file_path: &str)` - returns the md5 hash (as a `String`), given an absolute or relative path
 
   ```Rust
-  let md5_hash = generate_md5("C:/Users/JohnDoe/Desktop/repos/Lust/README.md");
+  let md5_hash = generate_md5("C:/Users/JohnDoe/Desktop/repos/Fiffy/README.md");
   println!("{:?}", md5_hash);  //prints "b958ee170050ed7a2f93509f13bf16c3"
   ```
 
 ### Installing Prerequisites
 
-Below you'll find what's required to build and compile Lust:
+Below you'll find what's required to build and compile Fiffy:
 
 #### Rust and Cargo
 
@@ -52,24 +52,24 @@ Instructions for Microsoft Windows may be found **[here](https://github.com/rust
 
 Further installation instructions can be found **[here](http://doc.crates.io/#installing)**.
 
-### Building Lust
+### Building Fiffy
 
 After installing the prerequisites listed above, you're ready to build!
 
 1. First, clone the repository to your local machine via git:
 
   ```
-  git clone https://github.com/SeanPrashad/Lust.git
+  git clone https://github.com/SeanPrashad/Fiffy.git
   ```
 
-  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Lust/archive/master.zip)**.
+  Or by downloading the `.zip` equivalent, found **[here](https://github.com/SeanPrashad/Fiffy/archive/master.zip)**.
 
   *Note*: Remember to extract the `.zip` file to a location where you conduct your work!
 
 2. Next, `cd` into the downloaded repository using your Terminal (or Git Bash if on Windows):
 
   ```
-  cd whereMyReposAreStored/Lust/
+  cd whereMyReposAreStored/Fiffy/
   ```
 
 3. To build the source code, use:
@@ -92,7 +92,7 @@ cargo test
 
 ## Linting
 
-Rust comes with a built-in linter, Clippy, that's automatically configured to run when you build Lust.
+Rust comes with a built-in linter, Clippy, that's automatically configured to run when you build Fiffy.
 
 To invoke Clippy on-demand, simply run:
 
@@ -120,7 +120,7 @@ Any and all contributions are welcome, regardless of your programming expertise.
 * **David Humphrey** - *Documentation improvements/development suggestions* - [@humphd](https://github.com/humphd)
 * **Marco Beltempo** - *Source code refinement* - [@marcobeltempo](https://github.com/marcobeltempo)
 
-See also the list of [contributors](https://github.com/SeanPrashad/Lust/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/SeanPrashad/Fiffy/graphs/contributors) who participated in this project.
 
 ## License
 

@@ -1,6 +1,6 @@
 [package]
 name = "fiffy"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Sean Prashad <S.Prashad@outlook.com>", "Marco Beltempo"]
 description = "A Rust library intended for finding out everything about your beloved file system"
 repository = "https://github.com/SeanPrashad/Lust"

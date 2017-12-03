@@ -1,4 +1,4 @@
-# Lust [![Build Status](https://travis-ci.org/SeanPrashad/Lust.svg?branch=master)](https://travis-ci.org/SeanPrashad/Lust)
+# Lust [![Build Status](https://travis-ci.org/SeanPrashad/Lust.svg?branch=master)](https://travis-ci.org/SeanPrashad/Lust) [![Build Status]( https://img.shields.io/crates/v/lust.svg)](https://crates.io/crates/lust)
 
 A Rust library designed to provide simple data for a given file path!
 

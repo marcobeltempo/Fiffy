@@ -103,7 +103,7 @@ cargo clippy
 *Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo clippy --verbose`). More information can be found **[here](https://github.com/rust-lang-nursery/rust-clippy#usage)**.
 
 
-## Technologies & Tools
+## Tools & Technologies
 
 * [Rust](https://www.rust-lang.org/en-US/index.html) - A systems programming language
 * [Crates.io](https://crates.io/) - Rust's Package Manager

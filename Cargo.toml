@@ -9,6 +9,7 @@ license = "MIT"
 
 [dependencies]
 rust-crypto = "^0.2"
+clippy = {version = "0.0.175", optional = true}
 
 [features]
 default = []

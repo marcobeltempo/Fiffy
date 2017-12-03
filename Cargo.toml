@@ -1,7 +1,7 @@
 [package]
 name = "lust"
-version = "0.1.0"
-authors = ["Sean Prashad <S.Prashad@outlook.com>"]
+version = "0.1.1"
+authors = ["Sean Prashad <S.Prashad@outlook.com>", "Marco Beltempo"]
 description = "A Rust library intended for finding out everything about your beloved file system"
 repository = "https://github.com/SeanPrashad/Lust"
 readme = "README.md"

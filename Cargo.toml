@@ -1,7 +1,7 @@
 [package]
 name = "fiffy"
 version = "0.1.4"
-authors = ["Sean Prashad <S.Prashad@outlook.com>", "Marco Beltempo <marco.beltempo@gmail.com>]
+authors = ["Sean Prashad <S.Prashad@outlook.com>", "Marco Beltempo <marco.beltempo@gmail.com>"]
 description = "A Rust library intended for simple file processing"
 repository = "https://github.com/SeanPrashad/Fiffy"
 readme = "README.md"

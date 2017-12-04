@@ -1,42 +1,26 @@
 # Fiffy [![Build Status](https://travis-ci.org/SeanPrashad/Fiffy.svg?branch=master)](https://travis-ci.org/SeanPrashad/Fiffy) [![Build Status]( https://img.shields.io/crates/v/fiffy.svg)](https://crates.io/crates/fiffy)
 
+A Rust library designed to provide simple data for a given file path!
+
+## Table of Contents
+
+
+  * [Getting Started](#getting-started)
+  * [Installing Prerequisites](#installing-prerequisites)
+  * [Rust and Cargo](#rust-and-cargo)
+  * [Building Fiffy](#building-fiffy)
+  * [Running the Test Suite](#running-the-test-suite)
+  * [Linting](#linting)
+  * [Usage](#usage)
+  * [Tools and Technologies](#tools-and-technologies)
+  * [Contributing](#contributing)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Usage
-
-1. `get_file_name(file_path: &str)` - returns the file name (as an [OsString](https://doc.rust-lang.org/std/ffi/struct.OsString.html)), given an absolute or relative path
-
-  ```Rust
-  let file_path = "/home/kim/mydata.txt";
-  let file_name = get_file_name(file_path);
-  println!("{:?}", file_name);  //prints "mydata.txt"
-  ```
-
-2. `get_file_size(file_path: &str)` - returns the file size (as a [u64](http://manishearth.github.io/rust-internals-docs/std/primitive.u64.html)), given an absolute or relative path
-
-  ```Rust
-  let file_path = "/home/kim/mydata.txt";
-  let file_size = get_file_size(file_path);
-  println!("{:?}", file_size);  //prints "129" - (e.g., the file is 129 bytes on disk)
-  ```
-
-3. `generate_sha1(file_path: &str)` - returns the sha1 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
-
-  ```Rust
-  let text = "The quick brown fox jumps over the lazy dog"
-  let sha1_digest = generate_sha1(text);
-  println!("{:?}", sha1_digest);  //prints "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12"
-  ```
-
-4. `generate_md5(file_path: &str)` - returns the md5 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
-
-  ```Rust
-  let text = "The quick brown fox jumps over the lazy dog"
-  let md5_digest = generate_md5(text);
-  println!("{:?}", md5_digest);  //prints "9e107d9d372bb6826bd81d3542a419d6"
-  ```
 
 ### Installing Prerequisites
 
@@ -104,8 +88,41 @@ cargo clippy
 
 *Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo clippy --verbose`). More information can be found **[here](https://github.com/rust-lang-nursery/rust-clippy#usage)**.
 
+### Usage
 
-## Tools & Technologies
+1. `get_file_name(file_path: &str)` - returns the file name (as an [OsString](https://doc.rust-lang.org/std/ffi/struct.OsString.html)), given an absolute or relative path
+
+  ```Rust
+  let file_path = "/home/kim/mydata.txt";
+  let file_name = get_file_name(file_path);
+  println!("{:?}", file_name);  //prints "mydata.txt"
+  ```
+
+2. `get_file_size(file_path: &str)` - returns the file size (as a [u64](http://manishearth.github.io/rust-internals-docs/std/primitive.u64.html)), given an absolute or relative path
+
+  ```Rust
+  let file_path = "/home/kim/mydata.txt";
+  let file_size = get_file_size(file_path);
+  println!("{:?}", file_size);  //prints "129" - (e.g., the file is 129 bytes on disk)
+  ```
+
+3. `generate_sha1(file_path: &str)` - returns the sha1 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
+
+  ```Rust
+  let text = "The quick brown fox jumps over the lazy dog"
+  let sha1_digest = generate_sha1(text);
+  println!("{:?}", sha1_digest);  //prints "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12"
+  ```
+
+4. `generate_md5(file_path: &str)` - returns the md5 digest (as a [String](https://doc.rust-lang.org/std/string/struct.String.html)), given an absolute or relative path
+
+  ```Rust
+  let text = "The quick brown fox jumps over the lazy dog"
+  let md5_digest = generate_md5(text);
+  println!("{:?}", md5_digest);  //prints "9e107d9d372bb6826bd81d3542a419d6"
+  ```
+
+## Tools and Technologies
 
 * [Rust](https://www.rust-lang.org/en-US/index.html) - A systems programming language
 * [Crates.io](https://crates.io/) - Rust's Package Manager

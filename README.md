@@ -2,15 +2,10 @@
 
 A Rust library designed to provide simple data for a given file path!
 
-## Getting Started
+## Table of Contents
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Table of Contents
-=================
 
   * [Getting Started](#getting-started)
-  * [Table of Contents](#table-of-contents)
   * [Installing Prerequisites](#installing-prerequisites)
   * [Rust and Cargo](#rust-and-cargo)
   * [Building Fiffy](#building-fiffy)
@@ -22,6 +17,10 @@ Table of Contents
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments](#acknowledgments)
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Installing Prerequisites
 

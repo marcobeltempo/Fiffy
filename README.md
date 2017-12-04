@@ -7,7 +7,6 @@ A Rust library designed to provide simple data for a given file path!
 
   * [Getting Started](#getting-started)
   * [Installing Prerequisites](#installing-prerequisites)
-  * [Rust and Cargo](#rust-and-cargo)
   * [Building Fiffy](#building-fiffy)
   * [Running the Test Suite](#running-the-test-suite)
   * [Linting](#linting)
@@ -138,6 +137,7 @@ Any and all contributions are welcome, regardless of your programming expertise.
 * **Sean Prashad** - *Initial and on-going maintenance* - [@SeanPrashad](https://github.com/SeanPrashad)
 * **David Humphrey** - *Initial documentation and development improvements/suggestions* - [@humphd](https://github.com/humphd)
 * **Marco Beltempo** - *Source code contributor* - [@marcobeltempo](https://github.com/marcobeltempo)
+* **Dan Epstein** - *Documentation contributor* - [@Securter](https://github.com/Securter)
 
 See also the list of [contributors](https://github.com/SeanPrashad/Fiffy/graphs/contributors) who participated in this project.
 

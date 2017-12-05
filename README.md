@@ -4,8 +4,6 @@ A Rust library designed to provide simple data for a given file path!
 
 ## Table of Contents
 
-
-  * [Getting Started](#getting-started)
   * [Installing Prerequisites](#installing-prerequisites)
   * [Building Fiffy](#building-fiffy)
   * [Running the Test Suite](#running-the-test-suite)
@@ -87,7 +85,7 @@ cargo clippy
 
 *Note*: Supply the `--verbose` argument to get a more detailed output (ie. `cargo clippy --verbose`). More information can be found **[here](https://github.com/rust-lang-nursery/rust-clippy#usage)**.
 
-### Usage
+## Usage
 
 1. `get_file_name(file_path: &str)` - returns the file name (as an [OsString](https://doc.rust-lang.org/std/ffi/struct.OsString.html)), given an absolute or relative path
 
